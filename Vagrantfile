@@ -48,16 +48,16 @@ Vagrant.configure(2) do |config|
   # **
   # only enable AFTER first provion run
   # otherwise vagrant will fail at start
-  # so basically run 
+  # so basically run
   # >> vagrant up
   # >> vagrant halt
   # uncomment lines
   # >> vagrant up
   # **
-  #config.vm.synced_folder "./config", "/etc/bird/", id: "vagrant-root1",
-  #    owner: "bird",
-  #    group: "bird",
-  #    mount_options: ["dmode=750,fmode=644"]
+  config.vm.synced_folder "./config", "/etc/bird/", id: "vagrant-root1",
+      owner: "bird",
+      group: "bird",
+      mount_options: ["dmode=750,fmode=644"]
 
 
   # Provider-specific configuration so you can fine-tune various
